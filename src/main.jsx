@@ -31,9 +31,11 @@ const appConfig = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Provider store={store}>
+  // <React.StrictMode>
+  <Provider store={store}>
+    <RouterProvider router={appConfig}>
       <App />
-    </Provider>
-  </React.StrictMode>
+    </RouterProvider>
+  </Provider>
+  // </React.StrictMode>
 )

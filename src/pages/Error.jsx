@@ -4,9 +4,6 @@ import errorImg from "../assets/error.svg"
 
 const Error = () => {
   const error = useRouteError()
-  // console.log("error.status: ", error.status)
-  // console.log("error.statusText: ", error.statusText)
-  // console.log("error.error.message: ", error.error.message)
   return (
     <div data-testid="error-container" className="w-full h-full min-h-[600px] flex justify-center items-center">
       <div className={`${style.boxWidth} ${style.paddingX} py-10 w-screen h-full flex flex-col justify-center lg:flex-row lg:items-center gap-10`}>
@@ -22,7 +19,7 @@ const Error = () => {
         </div>
 
         <div className="w-full lg:w-[40%] flex justify-end">
-          <img src={errorImg.img} alt={errorImg.alt} className="w-[70%] lg:w-[100%] object-cover" />
+          <img src={errorImg} alt={errorImg.alt} className="w-[70%] lg:w-[100%] object-cover" />
         </div>
       </div>
     </div>

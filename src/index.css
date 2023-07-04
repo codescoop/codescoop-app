@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+.slide-navbar {
+  animation: slide 0.5s ease both;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

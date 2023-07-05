@@ -21,9 +21,9 @@ const Header = () => {
       <ul className="flex-1 hidden md:flex justify-end items-center gap-6 text-slate-800">
         {navLinks.map(navLink => {
           return (
-            <li key={navLink.id} className="hover:text-primary capitalize text-base">
-              <Link to={navLink.link}>{navLink.title}</Link>
-            </li>
+            <Link key={navLink.id} to={navLink.link}>
+              <li className="hover:text-primary capitalize text-base">{navLink.title}</li>
+            </Link>
           )
         })}
       </ul>
